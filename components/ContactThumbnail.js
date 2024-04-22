@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, TouchableOpacity, Image, Text, View } from 'react-native'; // Import View from react-native
+import { StyleSheet, TouchableOpacity, Image, Text, View } from 'react-native'; 
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import PropTypes from 'prop-types';
 

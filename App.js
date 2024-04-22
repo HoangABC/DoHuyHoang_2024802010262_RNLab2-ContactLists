@@ -1,15 +1,25 @@
-import React from "react";
-import { Provider } from "react-redux";
-import Store from "./store"; 
-import DrawerNavigator from "./routes";
-import 'react-native-gesture-handler';
 
-const App = () => {
+import { StyleSheet, Text, View } from 'react-native';
+
+import { NavigationContainer } from '@react-navigation/native';
+
+import TabNavigator from './stack_navigation';
+
+
+export default function App() {
   return (
-    <Provider store={Store}> 
-      <DrawerNavigator />
-    </Provider>
+  
+    <NavigationContainer>
+      <TabNavigator />
+    </NavigationContainer>
+    
   );
-};
+}
 
-export default App;
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+  },
+  
+});
